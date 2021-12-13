@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+    int P,R,t,a,x,z;
+    printf("simple interest calculator");
+    printf("\n\n formula: SI=(P*R*t)/100");
+    
+    printf("\n\n initial principal balance:");
+    scanf("%d",&P);
+    printf("\nRate per year(percentage):");
+    scanf("%d",&R);
+    printf("\nTime(in year):");
+    scanf("%d",&t);
+    
+    x=100;
+    
+    printf("\nSI =(%d *%d *%d)/100",P,R,t);
+    
+    z=P*R*t;
+    a=z/x;
+    printf("\nSI = %d",a);
+    printf("\nfinal amount=%d+%d=%d",a,P,a+P);
+}
